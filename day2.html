@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1.gün</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0 auto;
+        }
+
+        .day-cantainer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .theory, .practice {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        30 gün Javascript Öğrenimi
+    </h1>
+
+    <div class="day-cantainer" id="day1">
+      <div class="theory">
+        <h2>Gün 2: Değişkenler ve Veri Tipleri</h2>
+        <h3>Değişkenler</h3>
+        <p>JavaScript'te üç farklı değişken tanımlama yöntemi vardır.</p>
+        <ul>
+            <li><code>var</code> ...</li>
+            <li><code>let</code> ...</li>
+            <li><code>const</code> ...</li>
+        </ul>
+
+        <h3>Veri Tipleri</h3>
+        <ul>
+            <li>Sayı (Number)</li>
+            <li>Metin (String)</li>
+            <li>Mantıksal (Boolean)</li>
+            <li>Null</li>
+            <li>Undefined</li>
+
+        </ul>
+      </div>
+
+
+      <div class="practice">
+        <h3>Pratik</h3>
+        <button
+        onclick="variableExamples()"
+        >Değişken Örnekleri</button>
+        <button
+        onclick="dataTypeExamples()"
+        >Veri Tipi Örnekleri</button>
+        <button
+        onclick="typeofExamples()"
+        >typeof Örnekleri</button>
+
+        <div class="output" id="output">
+        </div>
+
+      </div>
+
+      
+    </div>
+
+    
+
+    <script src="./day2.js"></script>
+</body>
+</html>

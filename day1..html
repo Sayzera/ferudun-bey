@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1.gün</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0 auto;
+        }
+
+        .day-cantainer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .theory, .practice {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        30 gün Javascript Öğrenimi
+    </h1>
+
+    <div class="day-cantainer" id="day1">
+      <div class="theory">
+        <h2>Gün 1: Javascript'e Giriş</h2>
+        <h3>Teori</h3>
+        <p>JavaScript, web sayfalarını interaktif hale getirmek için kullanılan bir programlama dilidir. İlk olarak 1995 yılında Netscape tarafından geliştirilmiştir.</p>
+        <p>Temel Kavramlar:</p>
+        <ul>
+            <li>JavaScript'in web geliştirmedeki rolü</li>
+            <li>Tarayıcı konsolu kullanımı</li>
+            <li>Basit komutlar ve ifadeler</li>
+        </ul>
+      </div>
+
+
+      <div class="practice">
+        <h3>Pratik</h3>
+        <p>Tarayıcı konsolunu açmak için F12 tuşuna basın ve Console sekmesine geçin.</p>
+        <button
+        onclick="day1Pratik()"
+        >Pratik Örnekleri Çalıştır</button>
+
+        <div id="day1Outout">
+        </div>
+
+      </div>
+
+      
+    </div>
+
+    
+
+    <script src="./day1.js"></script>
+</body>
+</html>
