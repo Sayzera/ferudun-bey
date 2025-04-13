@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gün 6: Döngüler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0 auto;
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        .day-cantainer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #2d2d2d;
+            
+        }
+
+        .theory, .practice {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #4caf50
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+            transition:  all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .loop-section {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #222;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            min-height: 100px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .code-example {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Gün 6: Döngüler</h1>
+
+    <div class="day-container">
+        <div class="theory">
+            <h2>Teori</h2>
+            <div class="loop-section">
+                <h3>For Döngüsü</h3>
+                <p>Belirli bir koşul sağlandığı sürece tekrarlanan işlemler için kullanılır.</p>
+                <div class="code-example">
+                    <pre>
+for (let i = 0; i < 10; i++) {
+    // işlemler
+}</pre>
+                </div>
+            </div>
+
+            <div class="loop-section">
+                <h3>While Döngüsü</h3>
+                <p>Koşul doğru olduğu sürece çalışan döngü.</p>
+                <div class="code-example">
+                    <pre>
+while (koşul) {
+    // işlemler
+}</pre>
+                </div>
+            </div>
+
+            <div class="loop-section">
+                <h3>Do-While Döngüsü</h3>
+                <p>En az bir kez çalışan ve koşul doğru olduğu sürece devam eden döngü.</p>
+                <div class="code-example">
+                    <pre>
+do {
+    // işlemler
+} while (koşul);</pre>
+                </div>
+            </div>
+
+
+            <div class="loop-section">
+                <h3>ForEach Döngüsü</h3>
+                <p>Diziler üzerinde döngü yapmak için kullanılır.</p>
+                <div class="code-example">
+                    <pre>
+dizi.forEach((eleman, index) => {
+    // işlemler
+});</pre>
+                </div>
+            </div>
+
+
+            <div class="loop-section">
+                <h3>For-In Döngüsü</h3>
+                <p>Objelerin özellikleri üzerinde döngü yapmak için kullanılır.</p>
+                <div class="code-example">
+                    <pre>
+for (let ozellik in obje) {
+    // işlemler
+}</pre>
+                </div>
+            </div>
+
+
+            <div class="loop-section">
+                <h3>For-Of Döngüsü</h3>
+                <p>Yinelenebilir nesneler (diziler, stringler vb.) üzerinde döngü yapmak için kullanılır.</p>
+                <div class="code-example">
+                    <pre>
+for (let eleman of dizi) {
+    // işlemler
+}</pre>
+                </div>
+            </div>
+
+            
+
+
+        </div>
+
+        <div class="practice">
+            <div class="loop-section">
+                <h3>For Döngüsü Örnekleri</h3>
+                <button id="forLoopButton">For Döngüsünü Çalıştır</button>
+                <div class="result" id="forLoopResult"></div>
+            </div>
+
+            <div class="loop-section">
+                <h3>Whilte Döngüsü Örnekleri</h3>
+                <button id="whileLoopButton">While Döngüsünü Çalıştır</button>
+                <div class="result" id="whileLoopResult"></div>
+            </div>
+
+
+            <div class="loop-section">
+                <h3>Do-While Döngüsü Örnekleri</h3>
+                <button id="doWhileLoopButton">Do-While Döngüsünü Çalıştır</button>
+                <div class="result" id="doWhileLoopResult"></div>
+            </div>
+
+            <div class="loop-section">
+                <h3>ForEach Döngüsü Örnekleri</h3>
+                <button id="forEachLoopButton">ForEach Döngüsünü Çalıştır</button>
+                <div class="result" id="forEachLoopResult"></div>
+            </div>
+
+
+            <div class="loop-section">
+                <h3>For-In Döngüsü Örnekleri</h3>
+                <button id="forInLoopButton">For-In Döngüsünü Çalıştır</button>
+                <div class="result" id="forInLoopResult"></div>
+            </div>
+
+            <div class="loop-section">
+                <h3>For-Of Döngüsü Örnekleri</h3>
+                <button id="forOfLoopButton">For-Of Döngüsünü Çalıştır</button>
+                <div class="result" id="forOfLoopResult"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="day6.js"></script>
+    
+</body>
+</html>

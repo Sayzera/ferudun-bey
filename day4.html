@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 4.gün</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0 auto;
+        }
+
+        .day-cantainer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .theory, .practice {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .input-group {
+            margin: 10px 0;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Gün:4 Kontrol Yapıları - if statement
+    </h1>
+
+    <div class="day-cantainer" id="day1">
+        <div class="theory">
+            <h2>Teori</h2>
+            <h3>Kontrol Yapıları</h3>
+            <p>Kontrol yapıları, programın akışını belirli koşullara göre yönlendirmemizi sağlar:</p>
+            <ul>
+                <li><code>if</code>: Belirli bir koşul doğruysa kod bloğunu çalıştırır</li>
+                <li><code>else if</code>: Önceki koşul yanlışsa ve yeni koşul doğruysa çalışır</li>
+                <li><code>else</code>: Hiçbir koşul doğru değilse çalışır</li>
+            </ul>
+        </div>
+
+
+      <div class="practice">
+        <h2>Pratik</h2>
+        <div class="input-group">
+            <input type="number" id="number" placeholder="Bir sayı giriniz">
+        </div>
+
+        <button onclick="checkNumber()">Sayı Kontrol Et</button>
+        <button onclick="checkGrade()">Not Kontrolü</button>
+        <button onclick="checkAge()">Yaş Kontrolü</button>
+
+        <div id="output" class="output"></div>
+      </div>
+
+      
+    </div>
+
+    
+
+    <script src="./day4.js"></script>
+</body>
+</html>

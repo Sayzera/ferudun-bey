@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 4.gün</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            padding: 20px;
+            line-height: 1.6;
+            margin: 0 auto;
+        }
+
+        .day-cantainer {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .theory, .practice {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            border: none;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .input-group {
+            margin: 10px 0;
+        }
+        input, select {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>
+        Gün:4 Kontrol Yapıları - if statement
+    </h1>
+
+    <div class="day-cantainer" id="day1">
+        <div class="theory">
+            <h2>Teori</h2>
+            <h3>switch Yapısı</h3>
+            <p>switch yapısı, bir değişkenin değerini birden fazla durumla karşılaştırmak için kullanılır:</p>
+            <ul>
+                <li><code>switch</code>: Karşılaştırılacak değişkeni belirtir</li>
+                <li><code>case</code>: Her bir durumu tanımlar</li>
+                <li><code>break</code>: switch bloğundan çıkmak için kullanılır</li>
+                <li><code>default</code>: Hiçbir case eşleşmezse çalışır</li>
+            </ul>
+        </div>
+
+
+      <div class="practice">
+        <h2>Pratik</h2>
+        <div class="input-group">
+          <select id="daySelect">
+            <option value="">Gün seçin</option>
+            <option value="1">Pazartesi</option>
+            <option value="2">Salı</option>
+            <option value="3">Çarşamba</option>
+            <option value="4">Perşembe</option>
+            <option value="5">Cuma</option>
+            <option value="6">Cumartesi</option>
+            <option value="7">Pazar</option>
+          </select>
+        </div>
+
+        <button onclick="checkDay()">Günü Kontrol Et</button>
+        <button onclick="checkSeason()">Mevsim Kontrolü</button>
+        <button onclick="checkTrafficLight()">Trafik Işığı Kontrolü</button>
+
+     
+
+        <div id="output" class="output"></div>
+      </div>
+
+      
+    </div>
+
+    
+
+    <script src="./day5.js"></script>
+</body>
+</html>
