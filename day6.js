@@ -96,9 +96,6 @@ document.getElementById('doWhileLoopButton').addEventListener('click', () => {
 
 })
 
-
-
-
 document.getElementById('forEachLoopButton').addEventListener('click', () => {
     let result = '';
 

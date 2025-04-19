@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gün 9: Geri Dönüş Değerleri ve Fonksiyon Kapsamı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .day-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .theory, .practice {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+        .input-group {
+            margin: 10px 0;
+        }
+        input {
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .function-example {
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gün 9: Geri Dönüş Değerleri ve Fonksiyon Kapsamı</h1>
+    
+    <div class="day-container">
+        <div class="theory">
+            <h2>Teori</h2>
+            <h3>Geri Dönüş Değerleri</h3>
+            <p>Fonksiyonlar <code>return</code> ifadesi ile değer döndürebilir:</p>
+            <div class="function-example">
+                <pre>function topla(a, b) {
+    return a + b;
+}</pre>
+            </div>
+            
+            <h3>Fonksiyon Kapsamı (Scope)</h3>
+            <p>Değişkenlerin erişilebilir olduğu alan:</p>
+            <ul>
+                <li>Global Scope: Tüm kodda erişilebilir</li>
+                <li>Local Scope: Sadece fonksiyon içinde erişilebilir</li>
+                <li>Block Scope: Sadece blok içinde erişilebilir (let, const)</li>
+            </ul>
+        </div>
+        
+        <div class="practice">
+            <h2>Pratik</h2>
+            <div class="input-group">
+                <input type="number" id="number" placeholder="Bir sayı girin">
+            </div>
+            
+            <button onclick="testReturnValue()">Geri Dönüş Değeri Testi</button>
+            <button onclick="testScope()">Kapsam Testi</button>
+            <button onclick="testClosure()">Kapanış (Closure) Testi</button>
+            
+            <div id="output" class="output"></div>
+        </div>
+    </div>
+
+    <script src="day9.js"></script>
+</body>
+</html> 

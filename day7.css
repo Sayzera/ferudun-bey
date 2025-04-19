@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    padding: 20px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.day-cantainer {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+.theory, .practice {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.number-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px
+}
+
+.bg-red  {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.number-item {
+    padding: 5px 10px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+}

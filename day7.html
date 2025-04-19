@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 7.gün</title>
+    <link rel="stylesheet" href="./day7.css">
+</head>
+<body>
+    <h1>
+        While ve Do while
+    </h1>
+
+    <div class="day-cantainer" id="day1">
+        <div class="theory">
+            <h2>Teori</h2>
+            <h3>while ve do...while Döngüleri</h3>
+            <p>while ve do...while döngüleri, belirli bir koşul sağlandığı sürece çalışır:</p>
+            <ul>
+                <li><code>while</code>: Önce koşulu kontrol eder, sonra çalışır</li>
+                <li><code>do...while</code>: Önce çalışır, sonra koşulu kontrol eder</li>
+                <li><code>break</code>: Döngüden çıkmak için kullanılır</li>
+                <li><code>continue</code>: Mevcut iterasyonu atlayıp sonraki iterasyona geçer</li>
+            </ul>
+        </div>
+
+
+      <div class="practice">
+        <h2>Pratik</h2>
+        <div class="input-group">
+            <input type="number" id="targetNumber" placeholder="Bir sayı giriniz">
+        </div>
+
+        <button onclick="countWithWhile()">while ile Say</button>
+        <button onclick="findPrimes()">Asal Sayıları Bul</button>
+        <button onclick="breakExample()">Break Örneği</button>
+        <button onclick="continueExample()">Continue Örneği</button>
+
+
+        <div id="output-1" class="output"></div>
+        <div id="output-2" class="output"></div>
+      </div>
+
+      
+    </div>
+
+    
+
+    <script src="./day7.js"></script>
+</body>
+</html>
