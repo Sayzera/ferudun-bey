@@ -81,6 +81,8 @@ function createPerson() {
 }
 
 
+
+
 // TODO: Oluşturulan kullanıcılar sil butonuna tıklandığında silinmesi için gerekli fonksiyonu oluşturunuz.
 
 

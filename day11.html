@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gün 11: Temel Dizi Metotları</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+      }
+      .day-container {
+        margin-bottom: 30px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .theory,
+      .practice {
+        margin-bottom: 20px;
+      }
+      h2 {
+        color: #2c3e50;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 5px;
+      }
+      button:hover {
+        background-color: #2980b9;
+      }
+      .output {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+      }
+      .input-group {
+        margin: 10px 0;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin: 5px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .array-example {
+        background-color: #f8f9fa;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+      .array-item {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+        margin: 2px;
+        background-color: #e9ecef;
+        border-radius: 3px;
+      }
+      .method-info {
+        background-color: #e9ecef;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gün 11: Temel Dizi Metotları</h1>
+
+    <div class="day-container">
+      <!-- <div class="theory">
+            <h2>Teori</h2>
+            <h3>Temel Dizi Metotları</h3>
+            
+            <div class="method-info">
+                <h4>push()</h4>
+                <p>Dizinin sonuna yeni öğe ekler</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2];
+arr.push(3); // [1, 2, 3]</pre>
+                </div>
+            </div>
+            
+            <div class="method-info">
+                <h4>pop()</h4>
+                <p>Dizinin sonundan öğe çıkarır</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3];
+arr.pop(); // [1, 2]</pre>
+                </div>
+            </div>
+            
+            <div class="method-info">
+                <h4>shift()</h4>
+                <p>Dizinin başından öğe çıkarır</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3];
+arr.shift(); // [2, 3]</pre>
+                </div>
+            </div>
+            
+            <div class="method-info">
+                <h4>unshift()</h4>
+                <p>Dizinin başına yeni öğe ekler</p>
+                <div class="array-example">
+                    <pre>let arr = [2, 3];
+arr.unshift(1); // [1, 2, 3]</pre>
+                </div>
+            </div>
+
+            <div class="method-info">
+                <h4>filter()</h4>
+                <p>Belirtilen koşula uyan öğeleri içeren yeni bir dizi oluşturur</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3, 4, 5];
+let filtered = arr.filter(num => num > 2); // [3, 4, 5]</pre>
+                </div>
+            </div>
+
+            <div class="method-info">
+                <h4>map()</h4>
+                <p>Dizinin her öğesini dönüştürerek yeni bir dizi oluşturur</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3];
+let mapped = arr.map(num => num * 2); // [2, 4, 6]</pre>
+                </div>
+            </div>
+
+            <div class="method-info">
+                <h4>reduce()</h4>
+                <p>Diziyi tek bir değere indirger</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3, 4];
+let sum = arr.reduce((acc, curr) => acc + curr, 0); // 10</pre>
+                </div>
+            </div>
+
+            <div class="method-info">
+                <h4>find()</h4>
+                <p>Belirtilen koşula uyan ilk öğeyi bulur</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3, 4, 5];
+let found = arr.find(num => num > 3); // 4</pre>
+                </div>
+            </div>
+
+            <div class="method-info">
+                <h4>some()</h4>
+                <p>Dizide en az bir öğenin belirtilen koşulu sağlayıp sağlamadığını kontrol eder</p>
+                <div class="array-example">
+                    <pre>let arr = [1, 2, 3, 4, 5];
+let hasEven = arr.some(num => num % 2 === 0); // true</pre>
+                </div>
+            </div>
+
+            <div class="method-info">
+                <h4>every()</h4>
+                <p>Dizideki tüm öğelerin belirtilen koşulu sağlayıp sağlamadığını kontrol eder</p>
+                <div class="array-example">
+                    <pre>let arr = [2, 4, 6, 8];
+let allEven = arr.every(num => num % 2 === 0); // true</pre>
+                </div>
+            </div>
+        </div> -->
+
+      <div class="practice">
+        <h2>Pratik</h2>
+        <div class="input-group">
+            <div>
+                <label>Name</label>
+                <input type="text" id="name" />
+              </div>
+          <div>
+            <label>CARRIER</label>
+            <select id="carrier">
+              <option value="TK LIST">TK LIST</option>
+              <option value="MNG">MNG</option>
+            </select>
+          </div>
+
+          <div>
+            <label>TYPE</label>
+            <select id="type">
+              <option value="GCR">GCR</option>
+              <option value="DGR">DGR</option>
+            </select>
+          </div>
+
+          <div>
+            <label>MIN</label>
+            <input type="number" id="min" />
+          </div>
+          <div>
+            <label>45</label>
+            <input type="number" id="45" />
+          </div>
+        </div>
+
+        <button onclick="pushNavlun()">Ekle</button>
+        <button onclick="popExample()">Dizinin Son Elemanını Çıkar</button>
+        <button onclick="shiftExample()">Dizinin Başındaki Elemanı Çıkar</button>
+        <button onclick="unshiftExample()">Dizinin Başına Eleman Ekle</button>
+        <button onclick="filterExample()">Filter</button>
+        <button onclick="mapExample()">Map</button>
+        <button onclick="reduceExample()">Reduce</button>
+        <button onclick="findExample()">Find</button>
+        <button onclick="someExample()">Some</button>
+        <button onclick="everyExample()">Every</button>
+
+        <div id="output" class="output"></div>
+      </div>
+    </div>
+
+    <script src="day11.js"></script>
+  </body>
+</html>
